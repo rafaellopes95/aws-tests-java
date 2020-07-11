@@ -1,0 +1,13 @@
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  MyTestKinesisStream:
+    Type: AWS::Kinesis::Stream
+    Properties:
+      Name: myTestKinesisStream
+      RetentionPeriodHours: 24
+      ShardCount: 1
+
+Outputs:
+  KinesisStreamName:
+    Description: The Kinesis stream used in the test project.
+    Value: 'myTestKinesisStream'

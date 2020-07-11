@@ -1,0 +1,12 @@
+---
+micronaut:
+  application:
+    name: my-lambda-app
+
+---
+datasources.default: {}
+
+dynamodb:
+  table:
+#    name: 'myTestTable'
+    name: 'myCompositeKeyTable'
